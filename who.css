@@ -1,0 +1,136 @@
+*{
+    font-family: 'Alice', serif;
+}
+
+body{
+    background-color: black;
+}
+
+:root{
+    --accent:rgba(238, 177, 44, 0.685);
+}
+
+.text-accent{
+    color: var(--accent);
+}
+
+.bg-accent{
+    background-color: var(--accent);
+}
+
+
+  .hr-accent{
+    width: 80%;
+    height: 3px;
+    background:linear-gradient(transparent, var(--accent),transparent);
+}
+
+
+
+  .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 0%;
+    z-index: 9999;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('media/overlay.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+  }
+  
+  .overlay.active{
+   width: 100%;
+  }
+
+  #wrapper{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    z-index: 9999;
+  }
+  
+  #triggerMenu{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #222;
+    border: 1px solid var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    cursor: pointer;
+  }
+  
+  .voice{
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: -998;
+    opacity: 0;
+    color: white;
+    border: 1px solid var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #home.active{
+    top: 100px;
+    opacity:1;
+  }
+  
+  #who.active{
+    top: 160px;
+    opacity:1;
+  }
+  
+  #where.active{
+    top: 220px;
+    opacity:1;
+  }
+  
+  #kids.active{
+    top: 280px;
+    opacity:1;
+  }
+  
+  
+  #gallery.active{
+    top: 340px;
+    opacity:1;
+   
+  }
+
+
+  #contact.active{
+    top: 400px;
+    opacity:1;
+    
+  }
+
+  .hr-accent2{
+      width: 33%;
+      height: 2px;
+      background: linear-gradient(transparent,var(--accent),transparent);
+  }
+
+  .who {
+    height: 70vh;
+    min-height: 500px;
+    background:linear-gradient(black 5%, transparent, black 95%), url('media/who.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
