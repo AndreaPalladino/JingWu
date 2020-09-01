@@ -19,33 +19,30 @@
     </div>
 
     <div id="wrapper">
-        <div id="triggerMenu">
-            <img src="media/floor.png" alt="" height="35">
-            <div id="home" class="voice">
-                <a href="" class="text-decoration-none"><i class="fas fa-home text-accent fa-2x"></i></a>
-            </div>
-            <div id="who" class="voice">
-                <a href="" class="text-decoration-none"><i class="fas fa-info-circle text-accent fa-2x"></i></a>
-            </div>
-            <div id="where" class="voice">
-                <a href="" class="text-decoration-none"><i class="fas fa-map-marker-alt text-accent fa-2x"></i></a>
-            </div>
-            <div id="kids" class="voice">
-                <a href="" class="text-decoration-none"><i class="fas fa-child text-accent fa-2x"></i></a>
-            </div>
-            <div id="gallery" class="voice">
-                <a href="" class="text-decoration-none"><i class="fas fa-images text-accent fa-2x"></i></a>
-            </div>
-            <div id="contact" class="voice">
-                <a href="" class="text-decoration-none"><i class="fas fa-at text-accent fa-2x"></i></a>
-            </div>
-        </div>
-    </div>
+      <div id="triggerMenu">
+          <img src="media/floor.png" alt="" height="35">
+          <div id="home" class="voice">
+              <a href="index.html" class="text-decoration-none"><i class="fas fa-home text-accent fa-2x"></i></a>
+          </div>
+          <div id="who" class="voice">
+              <a href="who.html" class="text-decoration-none"><i class="fas fa-info-circle text-accent fa-2x"></i></a>
+          </div>
+          <div id="where" class="voice">
+              <a href="where.html" class="text-decoration-none"><i class="fas fa-map-marker-alt text-accent fa-2x"></i></a>
+          </div>
+          <div id="kids" class="voice">
+              <a href="kids.html" class="text-decoration-none"><i class="fas fa-child text-accent fa-2x"></i></a>
+          </div>
+          <div id="gallery" class="voice">
+              <a href="gallery.html" class="text-decoration-none"><i class="fas fa-images text-accent fa-2x"></i></a>
+          </div>
+      </div>
+  </div>
     
       <header class="kids">
         <div class="container h-100">
           <div class="row h-100 align-items-center">
-            <div class="col-12">
+            <div class="col-12 mt-5 pt-5 pt-md-0 mt-md-0">
               <h1 class="font-weight-light text-white">Wushu <span class="h1 text-accent">KIDS</span></h1>
               
             </div>
@@ -60,7 +57,7 @@
          <div class="row">
              <div class="col-12 d-flex flex-column align-items-center justify-content-center">
                  <hr class="hr-accent2">
-                 <h2 class="text center text-white">Le chiamiamo <span class="h2 text-accent">"speranze"</span></h2>
+                 <h2 class="text-center text-white">Le chiamiamo <span class="h2 text-accent">"speranze"</span></h2>
                  <hr class="hr-accent2">
 
                  <p class="lead mt-5 text-white text-justify">
@@ -125,12 +122,11 @@
               <div class="col-12">
                   <p class="lead text-white text-center">Copyright © 2019 wushutorino.it. All rights reserved. Design by AgP91. Photos by Meimei!</p>
               </div>
-              <div class="col-12 d-inline d-flex justify-content-center">
-                  <i class="fab fa-facebook text-accent fa-2x mx-5"></i>
-                  <i class="fab fa-instagram-square text-accent fa-2x mx-5"></i>
-                  <i class="fas fa-at text-accent fa-2x mx-5"></i>
-  
-              </div>
+              <div class="col-12 d-inline d-lg-flex justify-content-center">
+                <a href="https://www.facebook.com/accademiajingwu" target="blank" class="btn border-0"><i class="fab fa-facebook text-accent fa-2x mx-4 mx-lg-5"></i></a>
+                <a href="https://www.instagram.com/accademia_jingwu/" class="btn border-0"><i class="fab fa-instagram-square text-accent fa-2x mx-4 mx-lg-5"></i></a>
+                <button class="btn border-0"data-toggle="modal" data-target="#contactModal"><i class="fas fa-at text-accent fa-2x mx-4 mx-lg-5"></i></button>
+            </div>
           </div>
       </div>
 
@@ -170,3 +166,21 @@
 
   </body>
 </html>
+
+<!-- Modal per contatti -->
+<div class="modal fade mt-5 pt-5" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-modal">
+      <div class="modal-header">
+        <h5 class="modal-title text-accent" id="exampleModalLabel">Contatti</h5>
+      </div>
+      <div class="modal-body">
+        <h5 class="text-accent">Mail: <span class="text-white h5">accademiajingwu@hotmail.it</span></h5>
+        <h5 class="text-accent">Telefono: <span class="text-white h5">348-0092187</span></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-accent d-block mx-auto text-white" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

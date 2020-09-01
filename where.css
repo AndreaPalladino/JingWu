@@ -34,9 +34,9 @@ body{
     height: 100vh;
     width: 0%;
     z-index: 9999;
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('media/overlay.png') ;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('media/logo.png') ;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     transition: 0.5s;
   }
   
@@ -134,3 +134,37 @@ body{
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  .cursor{
+    cursor: pointer;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  .bg-modal{
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+
+  .btn-accent{
+    background: 
+    linear-gradient(to right, var(--accent) 2px, transparent 2px) 0 0,
+    linear-gradient(to right, var(--accent) 2px, transparent 2px) 0 100%,
+    linear-gradient(to left, var(--accent) 2px, transparent 2px) 100% 0,
+    linear-gradient(to left, var(--accent) 2px, transparent 2px) 100% 100%,
+    linear-gradient(to bottom, var(--accent) 2px, transparent 2px) 0 0,
+    linear-gradient(to bottom, var(--accent) 2px, transparent 2px) 100% 0,
+    linear-gradient(to top, var(--accent) 2px, transparent 2px) 0 100%,
+    linear-gradient(to top, var(--accent) 2px, transparent 2px) 100% 100%
+    ;
+
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    transition: 0.4s;
+}
+
+.btn-accent:hover{
+    letter-spacing: 4px;
+}
